@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+
+<html lang="az">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Trade Point Consulting MMC</title>
+
+<style>
+
+:root{
+
+  --blue:#092d5c;
+
+  --blue2:#123f76;
+
+  --gold:#c99a32;
+
+  --light:#f5f7fa;
+
+  --text:#182433;
+
+}
+
+*{
+
+  box-sizing:border-box;
+
+}
+
+body{
+
+  margin:0;
+
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+
+  background:var(--light);
+
+  color:var(--text);
+
+  line-height:1.6;
+
+}
+
+.hero{
+
+  background:linear-gradient(145deg,#06254d,#0c3c73);
+
+  color:white;
+
+  text-align:center;
+
+  padding:55px 20px 50px;
+
+}
+
+.logo{
+
+  width:100px;
+
+  height:100px;
+
+  margin:auto;
+
+  border:2px solid var(--gold);
+
+  border-radius:50%;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  font-size:38px;
+
+  font-weight:800;
+
+  color:white;
+
+}
+
+.logo span{
+
+  color:var(--gold);
+
+}
+
+.hero h1{
+
+  margin:20px 0 0;
+
+  font-size:31px;
+
+  letter-spacing:1px;
+
+}
+
+.hero h2{
+
+  margin:0;
+
+  color:#e5bb5c;
+
+  font-size:18px;
+
+  letter-spacing:4px;
+
+}
+
+.hero p{
+
+  max-width:600px;
+
+  margin:18px auto 0;
+
+  color:#e8edf5;
+
+}
+
+.gold-line{
+
+  width:75px;
+
+  height:3px;
+
+  background:var(--gold);
+
+  margin:22px auto;
+
+}
+
+.container{
+
+  max-width:850px;
+
+  margin:auto;
+
+  padding:30px 18px;
+
+}
+
+.intro{
+
+  text-align:center;
+
+  margin-bottom:32px;
+
+}
+
+.intro h2{
+
+  color:var(--blue);
+
+  font-size:27px;
+
+  margin-bottom:8px;
+
+}
+
+.card{
+
+  background:white;
+
+  border-radius:18px;
+
+  padding:25px;
+
+  margin-bottom:22px;
+
+  box-shadow:0 8px 25px rgba(0,0,0,.07);
+
+  border-top:4px solid var(--gold);
+
+}
+
+.number{
+
+  display:inline-block;
+
+  background:var(--blue);
+
+  color:white;
+
+  border-radius:10px;
+
+  padding:7px 12px;
+
+  font-weight:bold;
+
+  margin-bottom:8px;
+
+}
+
+.card h2{
+
+  color:var(--blue);
+
+  margin:4px 0 10px;
+
+}
+
+.card h3{
+
+  color:#a97816;
+
+  margin-top:22px;
+
+}
+
+.card ul{
+
+  padding-left:22px;
+
+}
+
+.card li{
+
+  margin:9px 0;
+
+}
+
+.special{
+
+  background:#fff8e9;
+
+  border:1px solid #e2bd65;
+
+  border-radius:13px;
+
+  padding:16px;
+
+  margin-top:18px;
+
+}
+
+.special strong{
+
+  color:var(--blue);
+
+}
+
+.video{
+
+  background:var(--blue);
+
+  color:white;
+
+  border-radius:18px;
+
+  padding:35px 22px;
+
+  text-align:center;
+
+  margin:30px 0;
+
+}
+
+.play{
+
+  width:72px;
+
+  height:72px;
+
+  border:2px solid var(--gold);
+
+  border-radius:50%;
+
+  margin:15px auto;
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  font-size:30px;
+
+  color:var(--gold);
+
+}
+
+.video h2{
+
+  margin-bottom:5px;
+
+}
+
+.video p{
+
+  color:#d9e3ef;
+
+}
+
+.contact{
+
+  background:white;
+
+  border-radius:18px;
+
+  padding:28px 20px;
+
+  text-align:center;
+
+  box-shadow:0 8px 25px rgba(0,0,0,.07);
+
+}
+
+.contact h2{
+
+  color:var(--blue);
+
+}
+
+.button{
+
+  display:block;
+
+  text-decoration:none;
+
+  padding:15px;
+
+  border-radius:11px;
+
+  margin:12px 0;
+
+  font-weight:700;
+
+}
+
+.whatsapp{
+
+  background:#25D366;
+
+  color:white;
+
+}
+
+.phone{
+
+  background:var(--blue);
+
+  color:white;
+
+}
+
+.email{
+
+  background:var(--gold);
+
+  color:white;
+
+}
+
+.instagram{
+
+  border:2px solid var(--blue);
+
+  color:var(--blue);
+
+}
+
+.hours{
+
+  margin-top:22px;
+
+  color:#56606d;
+
+}
+
+footer{
+
+  margin-top:35px;
+
+  background:#061f40;
+
+  color:white;
+
+  text-align:center;
+
+  padding:28px 20px;
+
+}
+
+footer strong{
+
+  color:#e5b950;
+
+}
+
+@media(max-width:600px){
+
+  .hero h1{
+
+    font-size:27px;
+
+  }
+
+  .container{
+
+    padding:24px 14px;
+
+  }
+
+  .card{
+
+    padding:21px;
+
+  }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="hero">
+
+<div class="logo">
+
+T<span>P</span>
+
+</div>
+
+<h1>TRADE POINT</h1>
+
+<h2>CONSULTING MMC</h2>
+
+<div class="gold-line"></div>
+
+<p>
+
+Gömrük • Mühasibatlıq • Logistika
+
+</p>
+
+<p>
+
+Ticarət prosesləriniz üçün vahid peşəkar dəstək
+
+</p>
+
+</section>
+
+<div class="container">
+
+<section class="intro">
+
+<h2>Xidmətlərimiz</h2>
+
+<p>
+
+İdxal, ixrac, uçot və yükdaşıma proseslərini
+
+bir komandada əlaqələndiririk.
+
+</p>
+
+</section>
+
+<section class="card">
+
+<span class="number">01</span>
+
+<h2>Gömrük xidmətləri</h2>
+
+<p>
+
+İdxal və ixrac əməliyyatlarının sənədləşdirilməsi
+
+və gömrük prosedurlarının müşayiəti.
+
+</p>
+
+<ul>
+
+<li>İdxal və ixrac gömrük rəsmiləşdirilməsi</li>
+
+<li>Gömrük sənədlərinin hazırlanması və yoxlanılması</li>
+
+<li>Mal təsviri və HS kod üzrə ilkin dəstək</li>
+
+<li>Gömrük bəyannamələrinin hazırlanması</li>
+
+<li>Gömrük ödənişlərinin ilkin hesablanması</li>
+
+<li>Müvəqqəti idxal və müvəqqəti ixrac</li>
+
+<li>Tranzit, təkrar ixrac və təkrar idxal prosedurları</li>
+
+<li>Gömrük anbarı prosedurları üzrə dəstək</li>
+
+</ul>
+
+<div class="special">
+
+<strong>XÜSUSİ XİDMƏT</strong>
+
+<h3>Daxildə emal xüsusi gömrük proseduru</h3>
+
+<p>
+
+Malların emal məqsədilə Azərbaycan Respublikasının
+
+gömrük ərazisinə gətirilməsi ilə bağlı prosedurların
+
+sənədləşdirilməsi və əməliyyatların müşayiəti.
+
+</p>
+
+</div>
+
+</section>
+
+<section class="card">
+
+<span class="number">02</span>
+
+<h2>Mühasibatlıq xidmətləri</h2>
+
+<p>
+
+Şirkətlərin gündəlik uçot, vergi, əməkhaqqı və
+
+maliyyə sənədlərinin sistemli idarə olunmasına dəstək.
+
+</p>
+
+<ul>
+
+<li>İlkin sənədlərin qəbulu və yoxlanılması</li>
+
+<li>Vergi və digər hesabatların hazırlanması</li>
+
+<li>Əməkhaqqı hesablamaları və kadr sənədləri</li>
+
+<li>Bank, kassa və müqavilə əməliyyatlarının uçotu</li>
+
+<li>İdxal və ixrac sənədlərinin uçotla uyğunlaşdırılması</li>
+
+<li>Aylıq nəticələrin hazırlanması və çatışmayan sənədlər üzrə nəzarət</li>
+
+<li>Mühasibatlıq prosesləri üzrə operativ məsləhət</li>
+
+</ul>
+
+<div class="special">
+
+<strong>ŞİRKƏTLƏR ÜÇÜN XİDMƏTLƏR</strong>
+
+<h3>Yeni şirkətin yaradılması</h3>
+
+<p>
+
+Yeni hüquqi şəxsin yaradılması və qeydiyyat
+
+prosesinin hazırlanmasına dəstək.
+
+</p>
+
+<h3>Qeydiyyat məlumatlarında dəyişiklik</h3>
+
+<p>
+
+Şirkətin təsisçi, direktor, hüquqi ünvan və digər
+
+qeydiyyat məlumatlarında dəyişikliklərin
+
+rəsmiləşdirilməsi üzrə dəstək.
+
+</p>
+
+</div>
+
+</section>
+
+<section class="card">
+
+<span class="number">03</span>
+
+<h2>Logistika xidmətləri</h2>
+
+<p>
+
+Yükə uyğun marşrutun seçilməsi, daşınmanın
+
+təşkili və prosesin izlənilməsi.
+
+</p>
+
+<ul>
+
+<li>Avtomobil daşımalarının təşkili</li>
+
+<li>Dəniz və konteyner daşımaları</li>
+
+<li>Hava daşımaları</li>
+
+<li>Multimodal daşımalar</li>
+
+<li>Marşrut və daşıyıcıların müqayisəsi</li>
+
+<li>Yükləmə və tranzit mərhələlərinin koordinasiyası</li>
+
+<li>Yükün izlənməsi və təhvil prosesinin təşkili</li>
+
+<li>Daşınma sənədlərinin ilkin yoxlanılması</li>
+
+</ul>
+
+<div class="special">
+
+<strong>XÜSUSİ XİDMƏT</strong>
+
+<p>
+
+Qiymət, müddət və marşrut üzrə uyğun
+
+daşıma variantlarının seçilməsi.
+
+</p>
+
+</div>
+
+</section>
+
+<section class="video">
+
+<h2>Video təqdimat</h2>
+
+<div class="play">▶</div>
+
+<p>
+
+Trade Point Consulting MMC-nin video təqdimatı
+
+tezliklə burada yerləşdiriləcək.
+
+</p>
+
+</section>
+
+<section class="contact">
+
+<h2>Gəlin əməkdaşlığa başlayaq</h2>
+
+<p>
+
+Ehtiyacınızı qısa şəkildə bildirin.
+
+İlkin müraciəti nəzərdən keçirib sizinlə əlaqə saxlayaq.
+
+</p>
+
+<a class="button whatsapp"
+
+href="https://wa.me/994504203007">
+
+WhatsApp ilə yazın
+
+</a>
+
+<a class="button phone"
+
+href="tel:+994504203007">
+
+☎ +994 50 420 30 07
+
+</a>
+
+<a class="button email"
+
+href="mailto:tpconsultingmmc@gmail.com">
+
+✉ tpconsultingmmc@gmail.com
+
+</a>
+
+<a class="button instagram"
+
+href="https://www.instagram.com/tradepointconsulting/">
+
+Instagram — @tradepointconsulting
+
+</a>
+
+<div class="hours">
+
+<strong>İş saatları</strong><br>
+
+Bazar ertəsi – Cümə<br>
+
+10:00 – 18:00
+
+<br><br>
+
+<strong>Ünvan</strong><br>
+
+AZ1075, Bakı şəhəri, Nərimanov rayonu<br>
+
+Fəxrəddin Musayev küçəsi, ev 231, mənzil 42
+
+</div>
+
+</section>
+
+</div>
+
+<footer>
+
+<strong>TRADE POINT CONSULTING MMC</strong>
+
+<br>
+
+Sizin ticarətiniz — bizim peşəkarlığımız
+
+<br><br>
+
+© 2026 Trade Point Consulting MMC
+
+</footer>
+
+</body>
+
+</html>
